@@ -1,50 +1,15 @@
-/*  Utility Global */
-/* Asap */
-.asap-lg {
-    font-family: 'Asap', sans-serif;
-    font-size: 56px;
-    font-weight: bold;
-    line-height: 120%;
-}
-
-.asap-md {
-    font-family: 'Asap', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 120%;
-}
-
-.asap-sm {
-    font-family: 'Asap', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 120%;
-}
-
-/* Inconsolata */
-.inconsolata-subtitle {
-    font-family: 'Inconsolata', sans-serif;
-    font-size: 20px;
-    line-height: 120%;
-    font-weight: 400;
-}
-
-/* Maven Pro */
-.maven-pro-md {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 16px;
-    line-height: 140%;
-    font-weight: 400;
-}
-
-.maven-pro-sm {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 14px;
-    line-height: 140%;
-    font-weight: 400;
-}
 
 :root {
+    /* Asap */
+    --asap-lg: bold 56px/120% 'Asap', sans-serif;
+    --asap-md: bold 24px/120% 'Asap', sans-serif;
+    --asap-sm: bold 16px/120% 'Asap', sans-serif;
+    /* Inconsolata */
+    --inconsolata-subtitle: 400 20px/120% 'Inconsolata', sans-serif;
+    /* Maven Pro */
+    --maven-pro-md:400 16px/140% 'Maven Pro', sans-serif;
+    --maven-pro-sm:400 14px/140% 'Maven Pro', sans-serif;
+
     /* Color */
     --red: #E3646E;
     --purple: #BB72E9;
@@ -73,15 +38,78 @@
 }
 
 body {
-    padding-block: 20px;
+    padding-top: 120px;
+    font: var(--maven-pro-md);
 }
 
 .container {
-    max-width: 1920px;
-    margin-inline: auto;
-    padding-inline: 32px;
+    max-width: 1040px;
+    justify-self: center;
 }
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    font: var(--asap-lg);
+    color: var(--gray-100);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font: var(--asap-md);
+    color: var(--gray-100);
+}
+
+h3 {
+    font: var(--inconsolata-subtitle);
+    color: var(--red);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font: var(--asap-sm);
+    color: var(--gray-100);
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    
+    background-color: var(--gray-400);
+    border-radius: 999px;
+    padding-inline: 16px;
+    padding-block: 8px;
+
+    gap: 5px;
+    font: var(--maven-pro-md);
+
+    img {
+        max-width: 24px;
+        max-width: 24px;
+    }
+}
+
+.card {
+    background-color: var(--gray-400);
+    padding: 12px;
+    border-radius: 12px;
+    
+    text-align: left;
+
+    img {
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    figcaption {
+        p {
+            font: var(--maven-pro-sm);
+            color: var(--gray-200);
+        }
+    }
 }

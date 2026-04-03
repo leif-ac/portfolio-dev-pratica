@@ -1,44 +1,61 @@
 #intro {
     background-image: url(../assets/bg/Background_Intro.png);
+    background-size: cover;
+    background-position-y: -100px;
+
     text-align: center; 
+    justify-items: center;
 
     header {
+        justify-items: center;
+        margin-bottom: 80px;
+
         figure {
             position: relative;
-            justify-items: center;    
 
-            #container-img {
-                height: 96px;
-                width: 96px;
+            height: 96px;
+            width: 96px;
+            border-radius: 100%;
+            margin-bottom: 56px;
+
+            border: 6px solid transparent;
+            outline: 2px solid var(--red);
+
+            img {
+                object-fit: cover;
+            }
+            
+            #portrait-container {
                 border-radius: 100%;
                 overflow: hidden;
-                position: relative;
-
-                border: 4px solid transparent;
-                outline: 2px solid var(--red);
-
-                img {
-                    object-fit: cover;
-                }
+                height: 100%;
+                width: 100%;
             }
+
             figcaption {
                 position: absolute;
                 bottom: -2px;
-                left: 20px;
-
+                right: -20px;
             }
+        }
+ 
+        #text-info {
+            padding-inline: 180px;
 
-
+            p:nth-child(1) {
+                font: var(--inconsolata-subtitle);
+                color: var(--gray-200);
+                margin-bottom: 8px;
+    
+                span {
+                    color: var(--red);
+                }
+            }
         }
     }
+
+    main {
+        gap: 16px;
+        margin-bottom: 94px;
+    }
 }
-
-
-/* avatar-container {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid transparent; /* Cria o espaço transparente interno */
-  /*outline: 2px solid #ff6b6b; /* O anel vermelho flutuante */
-  /*outline-offset: 4px; /* Empurra o contorno vermelho para fora, criando */
