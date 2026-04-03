@@ -14,8 +14,8 @@
     --red: #E3646E;
     --purple: #BB72E9;
     --blue: #3996DB;
-    --green:#EABD5F;
-    --yellow:#82BC4F;
+    --green:#82BC4F;
+    --yellow:#EABD5F;
     
     /* Base */
     --gray-100:#E2E4E9;
@@ -38,8 +38,10 @@
 }
 
 body {
-    padding-top: 120px;
     font: var(--maven-pro-md);
+    text-align: center;
+
+    margin-top: 120px;
 }
 
 .container {
@@ -111,5 +113,63 @@ h4 {
             font: var(--maven-pro-sm);
             color: var(--gray-200);
         }
+    }
+}
+
+.card:hover {
+    outline: solid var(--gray-300) 1.5px;
+    cursor: pointer;
+}
+
+.card-service {
+    border: var(--gray-500) solid 2px;
+    border-radius: 12px;
+    
+    max-width: 280px;
+    padding: 20px;
+
+    text-align: left;
+
+    img {
+        padding: 2px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font: var(--maven-pro-sm);
+        color: var(--gray-200);
+    }
+}
+
+.card-social {
+    width: 400px;
+    height: 68px;
+    padding: 20px;
+    border-radius: 8px;
+
+    background-color: var(--gray-400);
+
+    display: grid;
+    grid-template-columns: 28px auto 11.25px;
+    align-items: center;
+
+    text-align: left;
+
+    .svg-icon {
+        padding-inline: 4px;
+    }
+
+    span {
+        padding-left: 3px;
+        color: var(--gray-200);
+    }
+}
+
+.card-social:hover {
+    outline: solid var(--blue) 1.5px;
+    cursor: pointer;
+
+    .svg-icon {
+       filter: invert(47%) sepia(50%) saturate(885%) hue-rotate(168deg) brightness(96%) contrast(89%);
     }
 }

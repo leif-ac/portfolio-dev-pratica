@@ -1,12 +1,8 @@
 #project {
-    margin-top: calc(94px + 72px);
-    text-align: center;
+    padding-bottom: 144px;
 
     main {
         margin-top: 56px;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
 }

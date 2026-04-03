@@ -3,8 +3,10 @@
     background-size: cover;
     background-position-y: -100px;
 
-    text-align: center; 
     justify-items: center;
+
+    padding-bottom: calc(72px + 30px);
+
 
     header {
         justify-items: center;
@@ -55,7 +57,7 @@
     }
 
     main {
-        gap: 16px;
         margin-bottom: 94px;
+        gap: 16px;
     }
 }

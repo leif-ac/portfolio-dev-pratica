@@ -1,0 +1,14 @@
+#service {
+    padding-top: 88px;
+    padding-bottom: 120px;
+
+    background-color: var(--gray-600);
+
+    header {
+        margin-bottom: 56px;
+    }
+
+    main {
+        gap: 24px;
+    }
+}
